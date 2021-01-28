@@ -6,10 +6,10 @@ const CreateBlog = () => {
   const [body,setBody] = useState("")
   const [author,setAuthor] = useState("")
 
-  const seeValue = ()=>{
-    console.log('====================================');
-    console.log("This is title",title);
-    console.log('====================================');
+  const addBlog = (e)=>{
+   e.preventDefault();
+    const blog ={title,body,author};
+    console.log("This is blog object : ", blog);
   }
   return (
     <div className="create">
@@ -21,7 +21,7 @@ const CreateBlog = () => {
         <input type="text" required value={title} onChange={ (e) => setTitle(e.target.value) }/>
         <label>Enter the content</label>
         <textarea type="text" required value={body} onChange={ (e) => setBody(e.target.value) }/>
-        <button onClick={seeValue}>Add Blog</button>
+        <button onClick={addBlog}>Add Blog</button>
       </form>
     </div>
   );
