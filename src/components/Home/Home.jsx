@@ -43,17 +43,17 @@ const Home = () => {
   //     console.log("This is click " + name);
   //     setName(name);
   //   };
+
   return (
     <div className="Home">
       {/* <h2>Hellomy name is {name}</h2> */}
-      
-      {blogs.length == 0 ? (
+
+      {blogs.length === 0 ? (
         <p>La liste est vide </p>
       ) : (
-      <div>
-            <h3>Hello Welcome on React Blog </h3>
-        <BlogItem blogs={blogs} deleteBlog={deleteBlog} />
-      </div>
+        <div>
+          <BlogItem blogs={blogs} deleteBlog={deleteBlog} />
+        </div>
       )}
       {/* <button onClick={handleClick}>Click me bro</button>
             <button onClick={()=>{handleClickAgain("Luigi")}}>Click me again bro</button> */}
