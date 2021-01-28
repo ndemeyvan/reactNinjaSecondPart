@@ -1,15 +1,19 @@
 import './createBlog.css'
 import {useState} from 'react'
+import {useHistory} from 'react-router-dom'
 const CreateBlog = () => {
 
   const [title,setTitle] = useState("")
   const [body,setBody] = useState("")
   const [author,setAuthor] = useState("")
+  const history = useHistory();
 
   const addBlog = (e)=>{
    e.preventDefault();
     const blog ={title,body,author};
     console.log("This is blog object : ", blog);
+    // history.go(-1);
+    history.push("/");
   }
   return (
     <div className="create">
