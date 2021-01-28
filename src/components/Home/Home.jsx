@@ -52,6 +52,7 @@ const Home = () => {
         <p>La liste est vide </p>
       ) : (
         <div>
+          
           <BlogItem blogs={blogs} deleteBlog={deleteBlog} />
         </div>
       )}
