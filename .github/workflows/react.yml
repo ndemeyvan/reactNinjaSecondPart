@@ -23,7 +23,11 @@ jobs:
     # - run: cd reactNinjaSecondPart
     - run: npm i
     - run: npm run build 
-    - run: cd react
+    - run: cd reactNinjaSecondPart
+    - run: cd reactNinjaSecondPart
+    - run: cd reactNinjaSecondPart
+    - run: cd build
+
     # - run: sudo rm -rf /var/www/html/react
     # - run: sudo mkdir /var/www/html/react
     # - run: sudo cp -R . /var/www/html/react
